@@ -1,0 +1,13 @@
+[package]
+name = "ornithology"
+version = "0.1.0"
+edition = "2018"
+description = "All your combinatorial needs!"
+repository = "https://github.com/pard68/ornithology"
+license = "GPL-3.0-only"
+authors = ["Ian S. Pringle"]
+
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
