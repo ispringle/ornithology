@@ -1,4 +1,7 @@
-type BluebirdT0<T> = impl Fn(T) -> T;
+use masala::curry;
+
+type AFunc<T> = fn(T) -> T;
+
 /// bluebird :: b -> c -> a -> b -> a-> c
 /// The Bluebird Combinator, also known as the B combinator or function
 /// composition. This is a little harder to understand, but, essentially,
@@ -10,8 +13,9 @@ type BluebirdT0<T> = impl Fn(T) -> T;
 /// let c = |x| x - 1;
 /// assert_eq!(bluebird(b)(c)(3), b(c(3)))
 /// ```
-pub fn bluebird<T>(b: fn(T) -> T) -> impl Fn(fn(T) -> T) -> BluebirdT0<T> {
-    move |c| move |a| b(c(a))
+#[curry]
+pub fn bluebird<T>(a: AFunc<T>, b: AFunc<T>, c: T) -> T {
+    a(b(c))
 }
 
 #[cfg(test)]
