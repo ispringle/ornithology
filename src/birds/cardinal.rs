@@ -2,7 +2,7 @@
 use masala::curry;
 use std::ops::Div;
 
-/// cardinal :: a -> b -> a
+/// cardinal :: a -> b -> c -> b -> a -> c
 /// The Cardinal Combinator, also known as the C combinator, takes a function
 /// and two values, and then flips the two values and runs them in the function.
 /// ```
