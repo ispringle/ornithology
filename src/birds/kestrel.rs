@@ -1,4 +1,6 @@
 #![warn(missing_docs)]
+use masala::curry;
+
 /// kestrel :: a -> b -> a
 /// The Kestrel Combinator, also known as the K combinator, returns the first
 /// thing it was given.
@@ -7,8 +9,9 @@
 ///
 /// assert_eq!(kestrel("bird")("cat"), "bird")
 /// ```
-pub fn kestrel<T: Clone>(a: T) -> impl Fn(T) -> T {
-    move |_b: T| -> T { return a.clone() }
+#[curry]
+pub fn kestrel<T: Clone>(a: T, _b: T) -> T {
+    a.clone()
 }
 
 #[cfg(test)]
