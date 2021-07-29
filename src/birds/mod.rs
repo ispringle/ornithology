@@ -9,3 +9,6 @@ pub use bluebird::bluebird;
 
 mod cardinal;
 pub use cardinal::cardinal;
+
+mod idstar;
+pub use idstar::idstar;
