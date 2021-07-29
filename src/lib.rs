@@ -9,5 +9,6 @@
     unused_import_braces,
     unused_qualifications
 )]
+#![allow(incomplete_features)]
 pub mod birds;
 pub use crate::birds::*;
