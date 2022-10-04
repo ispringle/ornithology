@@ -1,5 +1,5 @@
 #![feature(type_alias_impl_trait)]
-#![feature(min_type_alias_impl_trait)]
+#![feature(type_alias_impl_trait)]
 #![deny(
     missing_debug_implementations,
     missing_copy_implementations,
