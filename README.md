@@ -16,11 +16,11 @@ Ornithology requires using nightly build due to some needed `features`.
 
 ## Birds
 
-- [ ] becard: `(c -> d) -> (b -> c) -> (a -> b) -> a -> d`
+- [x] becard: `(c -> d) -> (b -> c) -> (a -> b) -> a -> d`
 - [ ] blackbird: `(c -> d) -> (a -> b -> c) -> a -> b -> d`
-- [ ] bluebird': `(a -> c -> d) -> a -> (b -> c) -> b -> d`
+- [x] bluebird': `(a -> c -> d) -> a -> (b -> c) -> b -> d`
 - [ ] bunting: `(d -> e) -> (a -> b -> c -> d) -> a -> b -> c -> e`
-- [ ] cardinal: `(a -> b -> c) -> b -> a -> c`
+- [x] cardinal: `(a -> b -> c) -> b -> a -> c`
 - [ ] cardinal': `(c -> a -> d) -> (b -> c) -> a -> b -> d`
 - [ ] cardinalstar: `(a -> c -> b -> d) -> a -> b -> c -> d`
 - [ ] cardinalstarstar: `(a -> b -> d -> c -> e) -> a -> b -> c -> d -> e`
@@ -34,17 +34,17 @@ Ornithology requires using nightly build due to some needed `features`.
 - [ ] finchstarstar: `(a -> d -> c -> b -> e) -> a -> b -> c -> d -> e`
 - [ ] goldfinch: `(b -> c -> d) -> (a -> c) -> a -> b -> d`
 - [ ] hummingbird: `(a -> b -> a -> c) -> a -> b -> c`
-- [ ] idiot: `a -> a`
-- [ ] idstar: `(a -> b) -> a -> b`
+- [x] idiot: `a -> a`
+- [x] idstar: `(a -> b) -> a -> b`
 - [ ] idstarstar: `(a -> b -> c) -> a -> b -> c`
 - [ ] jalt: `(a -> c) -> a -> b -> c`
 - [ ] jalt': `(a -> b -> d) -> a -> b -> c -> d`
 - [ ] jay: `(a -> b -> b) -> a -> b -> a -> b`
-- [ ] kestrel: `a -> b -> a`
+- [x] kestrel: `a -> b -> a`
 - [ ] kite: `a -> b -> b`
 - [ ] owl: `((a -> b) -> a) -> (a -> b) -> b`
 - [ ] phoenix: `(b -> c -> d) -> (a -> b) -> (a -> c) -> a -> d`
-- [ ] psi: `(b -> b -> c) -> (a -> b) -> a -> a -> c`
+- [x] psi: `(b -> b -> c) -> (a -> b) -> a -> a -> c`
 - [ ] quacky: `a -> (a -> b) -> (b -> c) -> c`
 - [ ] queer: `(a -> b) -> (b -> c) -> a -> c`
 - [ ] quirky: `(a -> b) -> a -> (b -> c) -> c`
